@@ -15,7 +15,7 @@ require("nvim-tree").setup({
   sort_by = "case_sensitive",
   view = {
     width = 30,
-    side = "left",
+    side = "right",
     mappings = {
       list = {
         { key = { "l", "<CR>", "o" }, action = "edit" },
@@ -31,3 +31,4 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
+
