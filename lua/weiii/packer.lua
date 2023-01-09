@@ -23,20 +23,38 @@ return require('packer').startup(function(use)
 		--   vim.cmd('colorscheme rose-pine')
 	 --  end
   -- })
+  --
 
+  -- use 'shaunsingh/solarized.nvim'
+  use {
+  'maxmx03/solarized.nvim',
+  config = function ()
+    local success, solarized = pcall(require, 'solarized')
+
+    if not success then
+      return
+    end
+
+    solarized.setup()
+  end
+}
 
   use {'nyoom-engineering/oxocarbon.nvim'}
 
-  -- use {
-  --     'olivercederborg/poimandres.nvim',
-  --     config = function()
-  --         require('poimandres').setup {
-  --             -- leave this setup function empty for default config
-  --             -- or refer to the configuration section
-  --             -- for configuration options
-  --         }
-  --     end
-  -- }
+  use {
+      'olivercederborg/poimandres.nvim',
+      config = function()
+          -- Lua
+          vim.cmd('colorscheme poimandres')
+          require('poimandres').setup {
+              bold_vert_split = false, -- use bold vertical separators
+              dim_nc_background = false, -- dim 'non-current' window backgrounds
+              disable_background = true, -- disable background
+              disable_float_background = true, -- disable background for floats
+              disable_italics = false, -- disable italics
+          }
+      end
+  }
 
 
   -- Comment
