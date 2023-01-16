@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
   -- })
   --
 
+  use "EdenEast/nightfox.nvim" -- Packer
   -- use 'shaunsingh/solarized.nvim'
   use {
   'maxmx03/solarized.nvim',
@@ -129,5 +130,11 @@ return require('packer').startup(function(use)
 	  },
 	  tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
+
+  -- toggle terminal 
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+      require("toggleterm").setup()
+  end}
+
 end)
 

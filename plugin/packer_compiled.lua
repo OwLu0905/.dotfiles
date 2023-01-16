@@ -140,6 +140,11 @@ _G.packer_plugins = {
     path = "/Users/OwLu/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/Users/OwLu/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/Users/OwLu/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
@@ -187,7 +192,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["poimandres.nvim"] = {
-    config = { "\27LJ\2\n—\1\0\0\3\0\a\0\v6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\3\0'\2\4\0B\0\2\0029\0\5\0005\2\6\0B\0\2\1K\0\1\0\1\0\5\20disable_italics\1\29disable_float_background\2\23disable_background\2\22dim_nc_background\1\20bold_vert_split\1\nsetup\15poimandres\frequire\27colorscheme poimandres\bcmd\bvim\0" },
+    config = { "\27LJ\2\n—\1\0\0\3\0\a\0\v6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\3\0'\2\4\0B\0\2\0029\0\5\0005\2\6\0B\0\2\1K\0\1\0\1\0\5\20bold_vert_split\1\20disable_italics\1\29disable_float_background\2\23disable_background\2\22dim_nc_background\1\nsetup\15poimandres\frequire\27colorscheme poimandres\bcmd\bvim\0" },
     loaded = true,
     path = "/Users/OwLu/.local/share/nvim/site/pack/packer/start/poimandres.nvim",
     url = "https://github.com/olivercederborg/poimandres.nvim"
@@ -208,6 +213,12 @@ _G.packer_plugins = {
     path = "/Users/OwLu/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["toggleterm.nvim"] = {
+    config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0" },
+    loaded = true,
+    path = "/Users/OwLu/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/Users/OwLu/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -216,18 +227,22 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: poimandres.nvim
-time([[Config for poimandres.nvim]], true)
-try_loadstring("\27LJ\2\n—\1\0\0\3\0\a\0\v6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\3\0'\2\4\0B\0\2\0029\0\5\0005\2\6\0B\0\2\1K\0\1\0\1\0\5\20disable_italics\1\29disable_float_background\2\23disable_background\2\22dim_nc_background\1\20bold_vert_split\1\nsetup\15poimandres\frequire\27colorscheme poimandres\bcmd\bvim\0", "config", "poimandres.nvim")
-time([[Config for poimandres.nvim]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
-time([[Config for Comment.nvim]], false)
 -- Config for: solarized.nvim
 time([[Config for solarized.nvim]], true)
 try_loadstring("\27LJ\2\nM\0\0\4\0\4\0\n6\0\0\0006\2\1\0'\3\2\0B\0\3\3\14\0\0\0X\2\1ÄK\0\1\0009\2\3\1B\2\1\1K\0\1\0\nsetup\14solarized\frequire\npcall\0", "config", "solarized.nvim")
 time([[Config for solarized.nvim]], false)
+-- Config for: poimandres.nvim
+time([[Config for poimandres.nvim]], true)
+try_loadstring("\27LJ\2\n—\1\0\0\3\0\a\0\v6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\3\0'\2\4\0B\0\2\0029\0\5\0005\2\6\0B\0\2\1K\0\1\0\1\0\5\20bold_vert_split\1\20disable_italics\1\29disable_float_background\2\23disable_background\2\22dim_nc_background\1\nsetup\15poimandres\frequire\27colorscheme poimandres\bcmd\bvim\0", "config", "poimandres.nvim")
+time([[Config for poimandres.nvim]], false)
+-- Config for: toggleterm.nvim
+time([[Config for toggleterm.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
+time([[Config for toggleterm.nvim]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
